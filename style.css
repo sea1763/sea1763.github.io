@@ -1,0 +1,1277 @@
+body {
+  font-family: 微軟正黑體, Arial, Helvetica, sans-serif;
+}
+
+/* --電腦版型------------------------------------- */
+
+/* 選單 */
+#TOPMENU {
+  display: none;
+}
+.MENU {
+  position: fixed;
+  height: 65px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 1px 5px #c2c2c2;
+  padding-bottom: 20px;
+}
+.at_top {
+  background-color: transparent;
+  box-shadow: 0px 0px 0px #c2c2c2;
+  height: 120px;
+  transition: 1s;
+}
+.LOGO img {
+  display: block;
+  float: left;
+  padding: 20px;
+  height: 50px;
+  width: auto;
+  transition: 1s;
+}
+.at_topLOGO img {
+  height: 85px;
+  width: auto;
+  transition: 1s;
+}
+.MENU li {
+  display: inline-block;
+  margin-left: 40px;
+}
+.MENU li a {
+  display: block;
+  width: 60px;
+  height: 90px;
+  font-size: 20px;
+  line-height: 85px;
+  color: #6b6b6b;
+  font-weight: 1000;
+  text-decoration: none;
+}
+.MENU li a:hover,
+.MENU .current-active a {
+  color: #13a9c7;
+  transition: 0.1s;
+}
+
+.MENU li#protfolio:hover > ul {
+  display: block;
+}
+/* 隱藏選單 */
+li#protfolio ul.SUBMENU {
+  position: absolute;
+  display: none;
+  box-shadow: #c2c2c2 0 0 5px;
+  background-color: #ffffff;
+  padding: 10px;
+  margin-left: -60px;
+}
+#protfolio .SUBMENU li {
+  display: block;
+  margin-left: 0;
+}
+#protfolio .SUBMENU li a {
+  font-size: 18px;
+  color: #6b6b6b;
+  text-decoration: none;
+  text-align: center;
+  width: 160px;
+  height: 40px;
+  line-height: 40px;
+  font-weight: 600;
+}
+#protfolio .SUBMENU li a:hover {
+  font-size: 18px;
+  background-color: #ffe747;
+  transition: 0.3s;
+}
+#TOP-MENU {
+  display: none;
+}
+.MENU {
+  position: fixed;
+  height: 65px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 1px 5px #c2c2c2;
+  padding-bottom: 20px;
+}
+.at_top {
+  background-color: transparent;
+  box-shadow: 0px 0px 0px #c2c2c2;
+  height: 120px;
+  transition: 1s;
+}
+.LOGO img {
+  display: block;
+  float: left;
+  padding: 20px;
+  height: 50px;
+  width: auto;
+  transition: 1s;
+}
+.at_topLOGO img {
+  height: 85px;
+  width: auto;
+  transition: 1s;
+}
+.MENU li {
+  display: inline-block;
+  margin-left: 40px;
+}
+.MENU li a {
+  display: block;
+  width: 60px;
+  height: 90px;
+  font-size: 20px;
+  line-height: 85px;
+  color: #6b6b6b;
+  font-weight: 1000;
+  text-decoration: none;
+}
+.MENU li a:hover,
+.MENU .current-active a {
+  color: #13a9c7;
+  transition: 0.1s;
+}
+
+.MENU li#protfolio:hover > ul {
+  display: block;
+}
+/* 主頁區 */
+#MAIN_BG {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(255, 231, 71, 1) 50%
+  );
+}
+.maincontent {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.maintitle {
+  width: 350px;
+  height: 250px;
+  margin: 100px 150px 0px 150px;
+  float: left;
+}
+.mainbg {
+  margin-top: 230px;
+}
+.mainbg img {
+  box-shadow: #b8a631 5px 10px 30px;
+}
+h1 {
+  font-size: 65px;
+  line-height: 75px;
+  color: #13a9c7;
+  user-select: none;
+}
+h2 {
+  font-size: 65px;
+  line-height: 85px;
+  -webkit-text-stroke: 1px #13a9c7;
+  -webkit-text-fill-color: transparent;
+  user-select: none;
+}
+.maintitle p {
+  font-size: 30px;
+  line-height: 45px;
+  color: #6b6b6b;
+  font-weight: 1000;
+  user-select: none;
+}
+.brief {
+  width: 100%;
+  height: 200px;
+  background-image: linear-gradient(
+    to right,
+    rgba(19, 169, 199, 1) 50%,
+    rgba(255, 231, 71, 1) 50%
+  );
+  margin-top: -30px;
+  margin-bottom: 80px;
+}
+
+/* 關於我 */
+#ABOUT {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+#ABOUT h1 {
+  display: block;
+  margin: 0 auto;
+  font-size: 50px;
+  line-height: 250px;
+  color: #6b6b6b;
+  text-align: center;
+  background-color: #ffe747;
+  border-radius: 250px;
+  width: 250px;
+  height: 250px;
+  user-select: none;
+}
+.skill {
+  margin-top: 50px;
+  height: 280px;
+}
+.skill img {
+  display: block;
+  width: auto;
+  margin-right: 50px;
+  margin-left: 50px;
+  float: left;
+}
+.skill p {
+  width: 800px;
+  float: left;
+  font-size: 16px;
+  line-height: 25px;
+  color: #6b6b6b;
+}
+.line {
+  margin-left: 30px;
+  background-image: url(img/line.png);
+  background-repeat: no-repeat;
+  background-position: 35px 115px;
+  height: 350px;
+}
+.line ul li {
+  display: inline-block;
+  margin-right: 150px;
+}
+.line .job1 li {
+  font-size: 16px;
+  color: #6b6b6b;
+}
+.line .job2 li {
+  font-size: 16px;
+  color: #6b6b6b;
+  padding-left: 22px;
+}
+.line ul .time1 {
+  border-radius: 70px;
+  width: 70px;
+  height: 70px;
+  background-color: #69bcd5;
+  font-size: 22px;
+  line-height: 70px;
+  color: #ffffff;
+  text-align: center;
+}
+.line ul .time2 {
+  border-radius: 70px;
+  width: 70px;
+  height: 70px;
+  background-color: #12a8c7;
+  font-size: 22px;
+  line-height: 70px;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* 作品集 */
+.p_title h1 {
+  font-size: 50px;
+  color: #6b6b6b;
+  line-height: 120px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #ffe747;
+  height: 120px;
+  width: 100%;
+  user-select: none;
+}
+.trangle {
+  width: 100%;
+  height: 30px;
+  background-image: url(img/triangle.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.PORTFOLIO {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.subtitle p {
+  display: inline-block;
+  font-size: 40px;
+  color: #13a9c7;
+  font-weight: 1000;
+  line-height: 50px;
+  margin: 20px;
+}
+.subtitle span {
+  font-size: 25px;
+  color: #bedee4;
+  font-style: italic;
+}
+.more a {
+  display: block;
+  width: 100px;
+  height: 33px;
+  text-decoration: none;
+  color: #454545;
+  float: right;
+  font-size: 25px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  border-bottom: 3px solid #999999;
+  margin-bottom: 50px;
+}
+.more a:hover {
+  color: #13a9c7;
+  font-weight: 1000;
+  border-bottom: 3px solid #ffe747;
+  transition: 0.3s;
+}
+/* 專案設計 */
+.pd {
+  margin-bottom: 80px;
+}
+.pd a {
+  text-decoration: none;
+}
+.pd_p {
+  display: inline-block;
+  margin: 0 15px 45px 15px;
+}
+.pd_p p {
+  font-size: 25px;
+  color: #454545;
+  font-weight: 900;
+  line-height: 45px;
+}
+.pd_p span {
+  font-size: 16px;
+  color: #999999;
+}
+/* 網頁設計 */
+.wd {
+  margin-bottom: 90px;
+}
+.wd a {
+  text-decoration: none;
+}
+.wd_p {
+  display: inline-block;
+  margin: 0 15px 45px 15px;
+}
+.wd_p p {
+  font-size: 25px;
+  color: #454545;
+  font-weight: 900;
+  line-height: 45px;
+}
+.wd_p span {
+  font-size: 16px;
+  color: #999999;
+}
+/* BANNER設計 */
+.BD {
+  float: left;
+  margin-top: 220px;
+  height: 600px;
+}
+.BD .subtitle {
+  width: 300px;
+  height: 800px;
+}
+.BD .subtitle p {
+  display: block;
+  font-size: 40px;
+  color: #13a9c7;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 130px;
+}
+.BD .subtitle span {
+  display: block;
+  font-size: 25px;
+  color: #bedee4;
+  font-style: italic;
+  text-align: center;
+}
+.BDmore a {
+  display: block;
+  width: 100px;
+  height: 33px;
+  text-decoration: none;
+  color: #454545;
+  font-size: 25px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  border-bottom: 3px solid #999999;
+  margin: 20px auto 0 auto;
+}
+.BDmore a:hover {
+  color: #13a9c7;
+  font-weight: 1000;
+  border-bottom: 3px solid #ffe747;
+  transition: 0.3s;
+}
+.bd {
+  margin-bottom: 80px;
+}
+.bd_p {
+  display: inline-block;
+  /* margin-right: 10px; */
+  /* margin-top: 10px; */
+}
+.bd_p img {
+  width: 445px;
+}
+.bd a {
+  text-decoration: none;
+}
+/* UIUX設計 */
+.UIUXBG {
+  width: 100%;
+  background-color: #eeeeee;
+  margin-bottom: 80px;
+}
+.UIUX {
+  margin: 0 auto;
+  max-width: 1200px;
+  height: 400px;
+  background-image: url(img/index_UI.jpg);
+  background-repeat: no-repeat;
+}
+.UIUX .title {
+  width: 450px;
+  height: 400px;
+  background-color: #ffe747;
+  margin-left: 750px;
+}
+.UIUX .title p {
+  display: block;
+  font-size: 40px;
+  color: #666666;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 130px;
+}
+.UIUX .title span {
+  display: block;
+  font-size: 25px;
+  color: #666666;
+  font-style: italic;
+  text-align: center;
+}
+.UIUXmore a {
+  display: block;
+  width: 100px;
+  height: 33px;
+  text-decoration: none;
+  color: #454545;
+  font-size: 25px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  border-bottom: 3px solid #999999;
+  margin: 20px auto 0 auto;
+}
+.UIUXmore a:hover {
+  color: #13a9c7;
+  font-weight: 1000;
+  border-bottom: 3px solid #ffffff;
+  transition: 0.3s;
+}
+
+/* 平面設計 */
+.GD {
+  float: left;
+  margin-top: 220px;
+  height: 600px;
+}
+.GD .subtitle {
+  width: 300px;
+  height: 800px;
+}
+.GD .subtitle p {
+  display: block;
+  font-size: 40px;
+  color: #13a9c7;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 130px;
+}
+.GD .subtitle span {
+  display: block;
+  font-size: 25px;
+  color: #bedee4;
+  font-style: italic;
+  text-align: center;
+}
+.GDmore a {
+  display: block;
+  width: 100px;
+  height: 33px;
+  text-decoration: none;
+  color: #454545;
+  font-size: 25px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  border-bottom: 3px solid #999999;
+  margin: 20px auto 0 auto;
+}
+.GDmore a:hover {
+  color: #13a9c7;
+  font-weight: 1000;
+  border-bottom: 3px solid #ffe747;
+  transition: 0.3s;
+}
+.gd {
+  margin-bottom: 80px;
+}
+.gd_p {
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.gd a {
+  text-decoration: none;
+}
+
+/* 多媒體設計 */
+.md {
+  display: block;
+  margin-bottom: 280px;
+}
+.md a {
+  text-decoration: none;
+}
+.md_p {
+  display: inline-block;
+  margin: 0 15px 45px 15px;
+}
+.md_p p {
+  font-size: 25px;
+  color: #454545;
+  font-weight: 900;
+  line-height: 45px;
+}
+.md_p span {
+  font-size: 16px;
+  color: #999999;
+}
+
+/* 聯絡我 */
+#CONTACT {
+  background-image: url(img/FOOTERBG.png);
+  height: 600px;
+  right: 0;
+  bottom: 0;
+}
+.contactarea {
+  background-color: #ffe747;
+  max-width: 1200px;
+  height: 340px;
+  margin: 0 auto;
+}
+.contactarea .title {
+  float: left;
+  margin: 55px 50px 55px 250px;
+}
+.contactarea h1 {
+  width: 230px;
+  height: 230px;
+  font-size: 40px;
+  color: #6b6b6b;
+  line-height: 230px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 230px;
+  user-select: none;
+}
+.contactarea .info {
+  font-size: 16px;
+  color: #333333;
+  line-height: 35px;
+  float: left;
+  margin: 110px;
+}
+.contactarea .info ul img {
+  margin: 10px 5px -5px 5px;
+}
+.FOOTER {
+  margin: 220px 30px 0 0;
+}
+.FOOTER p {
+  font-size: 16px;
+  color: #ffffff;
+  text-align: right;
+}
+/* scrollTOP */
+.scrollTOP {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  background-color: #ffe747;
+  border-radius: 100px;
+  bottom: 60px;
+  right: 50px;
+  opacity: 1;
+  user-select: none;
+  cursor: pointer;
+}
+.scrollTOP p {
+  font-size: 22px;
+  color: #6b6b6b;
+  text-align: center;
+}
+
+.scrollTOP img {
+  display: block;
+  margin: 30px auto 0 auto;
+}
+.scrollTOP a {
+  text-decoration: none;
+}
+.scrollTOP1 {
+  opacity: 0;
+  transition: 1s;
+}
+/* --手機版型------------------------------------- */
+@media screen and (max-width: 767px) {
+  html,
+  body {
+    -webkit-text-size-adjust: none; /* iPhone 旋轉後 文字不要放大 */
+  }
+  #UL li {
+    float: none;
+    width: 100%;
+  }
+  #UL.active {
+    display: none; /*用jq控制的toggleClass*/
+  }
+  #UL {
+    height: auto;
+    background-color: #ffffff;
+  }
+  #TOPMENU {
+    position: absolute;
+    display: block;
+    width: 50px;
+    font-size: 30px;
+    padding: 20px;
+  }
+  a#TOPMENU {
+    display: block;
+    right: 0%;
+    text-decoration: none;
+    color: #69bcd5;
+  }
+  /* 選單 */
+
+  .MENU {
+    position: relative;
+    background-color: white;
+    box-shadow: 0px 1px 5px #c2c2c2;
+    padding-bottom: 20px;
+  }
+  .at_topLOGO img {
+    height: 50px;
+    width: auto;
+    transition: 1s;
+  }
+  .at_top {
+    height: 65px;
+  }
+  .MENU li {
+    margin: 0;
+  }
+  .MENU li a {
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+  }
+  .LOGO img {
+    padding: 20px;
+    margin-left: 0px;
+    position: relative;
+  }
+  #protfolio .SUBMENU li {
+    display: none; /*讓submenu消失*/
+  }
+  /* 主頁區 */
+  #MAIN_BG {
+    display: inline-block;
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 231, 71, 1) 50%,
+      rgba(255, 231, 71, 1) 50%
+    );
+  }
+  .maincontent {
+    width: 100%;
+  }
+  .maintitle {
+    width: 350px;
+    height: 220px;
+    margin: 30px 50px;
+    float: left;
+  }
+  .mainbg {
+    margin-top: 0px;
+  }
+  .mainbg img {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+  }
+  h1 {
+    font-size: 55px;
+    line-height: 60px;
+    user-select: none;
+  }
+  h2 {
+    font-size: 55px;
+    line-height: 60px;
+    -webkit-text-stroke: 1px #13a9c7;
+    -webkit-text-fill-color: transparent;
+  }
+  .maintitle p {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .brief {
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 231, 71, 1) 50%,
+      rgba(255, 231, 71, 1) 50%
+    );
+    height: 100px;
+    margin-bottom: 30px;
+  }
+  /* 關於我 */
+  #ABOUT {
+    width: 90%;
+  }
+  #ABOUT h1 {
+    font-size: 40px;
+    line-height: 200px;
+    border-radius: 200px;
+    width: 200px;
+    height: 200px;
+  }
+  .skill {
+    margin: 50px auto 30px auto;
+  }
+  .skill img {
+    display: none;
+  }
+  .skill p {
+    margin: 0 auto;
+    height: auto;
+    width: 100%;
+    line-height: 25px;
+    font-size: 20px;
+    color: #6b6b6b;
+    text-align: justify;
+    margin-bottom: 30px;
+  }
+  .line {
+    background-image: none;
+    height: auto;
+    margin-bottom: 30px;
+  }
+  .line .time {
+    display: none;
+  }
+  .line ul li {
+    margin-right: 0px;
+    margin-bottom: 5px;
+  }
+  .line .job1 li {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: #12a8c7;
+
+    font-size: 20px;
+  }
+  .line .job2 li {
+    display: flex;
+    justify-content: center;
+    padding-left: 0px;
+    width: 100%;
+    color: #12a8c7;
+
+    font-size: 20px;
+  }
+  .line ul .time1,
+  .line ul .time2 {
+    display: none;
+  }
+  /* 作品集 */
+  .p_title h1 {
+    font-size: 40px;
+    line-height: 100px;
+    height: 100px;
+  }
+  .PORTFOLIO {
+    width: 100%;
+  }
+  .subtitle p {
+    display: block;
+    text-align: center;
+  }
+  .subtitle span {
+    display: none;
+  }
+  .more a {
+    padding: 10px;
+    float: none;
+    margin: 0 auto;
+    border: 2px solid #c2c2c2;
+    border-radius: 10px;
+  }
+  .more a:hover {
+    border: 2px solid #ffe747;
+  }
+  /* 專案設計 */
+  .pd {
+    margin-bottom: 60px;
+  }
+  .pd_p {
+    margin: 0 0 30px 0;
+  }
+  .pd_p p {
+    text-align: center;
+  }
+  .pd_p img {
+    width: 100%;
+  }
+  .pd_p span {
+    display: none;
+  }
+  /* 網頁設計 */
+  .wd {
+    margin-bottom: 60px;
+  }
+  .wd_p {
+    margin: 0 0 30px 0;
+  }
+  .wd_p p {
+    text-align: center;
+  }
+  .wd_p img {
+    width: 100%;
+  }
+  .wd_p span {
+    display: none;
+  }
+  /* BANNER設計 */
+  .BD {
+    float: left;
+    width: 100%;
+    margin-top: 0px;
+    height: auto;
+  }
+  .BD .subtitle {
+    width: 100%;
+    height: auto;
+  }
+  .BD .subtitle p {
+    padding-top: 0px;
+  }
+  .BD .subtitle span {
+    display: none;
+  }
+  .BDmore a {
+    padding: 10px;
+    float: none;
+    margin: 20px auto;
+    border: 2px solid #c2c2c2;
+    border-radius: 10px;
+  }
+  .BDmore a:hover {
+    border: 2px solid #ffe747;
+  }
+  .bd {
+    margin-bottom: 60px;
+  }
+  .bd_p {
+    display: inline-block;
+  }
+  .bd_p img {
+    width: 100%;
+  }
+  .bd a {
+    text-decoration: none;
+  }
+  /* UIUX設計 */
+  .UIUXBG {
+    width: 100%;
+    margin-bottom: 80px;
+  }
+  .UIUX {
+    width: 100%;
+    height: auto;
+    background-image: none;
+  }
+  .UIUX .title {
+    width: 100%;
+    height: 300px;
+    margin-left: 0px;
+  }
+  .UIUX .title p {
+    display: block;
+    font-size: 40px;
+    color: #666666;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 80px;
+  }
+  .UIUX .title span {
+    display: block;
+    font-size: 25px;
+    color: #666666;
+    font-style: italic;
+    text-align: center;
+  }
+  .UIUXmore a {
+    padding: 10px;
+    float: none;
+    margin: 20px auto;
+    border: 2px solid #666666;
+    border-radius: 10px;
+  }
+  .UIUXmore a:hover {
+    border: 2px solid #ffffff;
+  }
+  /* 平面設計 */
+  .GD {
+    float: left;
+    width: 100%;
+    margin-top: 0px;
+    height: auto;
+  }
+  .GD .subtitle {
+    width: 100%;
+    height: auto;
+  }
+  .GD .subtitle p {
+    padding-top: 0px;
+  }
+  .GD .subtitle span {
+    display: none;
+  }
+  .GDmore a {
+    padding: 10px;
+    float: none;
+    margin: 10px auto;
+    border: 2px solid #c2c2c2;
+    border-radius: 10px;
+  }
+  .GDmore a:hover {
+    border: 2px solid #ffe747;
+  }
+  .gd {
+    margin-bottom: 60px;
+    width: 284px;
+    margin: 0 auto;
+  }
+  .gd a {
+    text-decoration: none;
+  }
+  /* 多媒體設計 */
+  .md {
+    margin-bottom: 60px;
+  }
+  .md_p {
+    margin: 0 0 30px 0;
+  }
+  .md_p p {
+    text-align: center;
+  }
+  .md_p img {
+    width: 100%;
+  }
+  .md_p span {
+    display: none;
+  }
+  /* 聯絡我 */
+  #CONTACT {
+    background-image: none;
+    width: 100%;
+    height: 550px;
+  }
+  .contactarea {
+    width: 100%;
+    height: 500px;
+  }
+  .contactarea .title {
+    width: 100%;
+    margin: 20px auto 0 auto;
+  }
+  .contactarea .info {
+    margin: 0px auto;
+    float: none;
+    width: 200px;
+  }
+  .contactarea h1 {
+    width: 200px;
+    height: 200px;
+    font-size: 30px;
+    line-height: 200px;
+    border-radius: 200px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .contactarea .info ul img {
+    margin: 10px 5px -5px 5px;
+  }
+  .FOOTER {
+    margin: 10px;
+  }
+  .FOOTER p {
+    color: #666666;
+    text-align: center;
+  }
+  /* scrollTOP */
+  .scrollTOP {
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .scrollTOP img {
+    margin: 20px auto 0 auto;
+  }
+}
+
+/* --平板版型------------------------------------- */
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  html,
+  body {
+    -webkit-text-size-adjust: none; /* iPhone 旋轉後 文字不要放大 */
+  }
+  #UL li {
+    float: none;
+    width: 100%;
+  }
+  #UL.active {
+    display: none; /*用jq控制的toggleClass*/
+  }
+  #UL {
+    height: auto;
+    background-color: #ffffff;
+  }
+  #TOPMENU {
+    position: absolute;
+    display: block;
+    width: 50px;
+    font-size: 30px;
+    padding: 20px;
+  }
+  a#TOPMENU {
+    display: block;
+    right: 0%;
+    text-decoration: none;
+    color: #69bcd5;
+  }
+  /* 選單 */
+
+  .MENU {
+    position: relative;
+    background-color: white;
+    box-shadow: 0px 1px 5px #c2c2c2;
+    padding-bottom: 20px;
+  }
+  .at_topLOGO img {
+    height: 50px;
+    width: auto;
+    transition: 1s;
+  }
+  .at_top {
+    height: 65px;
+  }
+  .MENU li {
+    margin: 0;
+  }
+  .MENU li a {
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+  }
+  .LOGO img {
+    padding: 20px;
+    margin-left: 0px;
+    position: relative;
+  }
+  #protfolio .SUBMENU li {
+    display: none; /*讓submenu消失*/
+  }
+  /* 主頁區 */
+  #MAIN_BG {
+    display: inline-block;
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0) 50%,
+      rgba(255, 231, 71, 1) 50%
+    );
+  }
+  .maincontent {
+    width: 100%;
+  }
+  .maintitle {
+    width: 350px;
+    height: 220px;
+    margin: 30px 50px;
+    float: left;
+  }
+  .mainbg {
+    margin-top: 100px;
+  }
+  .mainbg img {
+    display: block;
+    width: 400px;
+  }
+  h1 {
+    font-size: 55px;
+    line-height: 60px;
+    user-select: none;
+  }
+  h2 {
+    font-size: 55px;
+    line-height: 60px;
+    -webkit-text-stroke: 1px #13a9c7;
+    -webkit-text-fill-color: transparent;
+  }
+  .maintitle {
+    margin: 100px 100px;
+  }
+  .maintitle p {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .brief {
+    background-image: linear-gradient(
+      to right,
+      rgba(19, 169, 199, 1) 50%,
+      rgba(255, 231, 71, 1) 50%
+    );
+    height: 130px;
+    margin-bottom: 30px;
+  }
+  /* 關於我 */
+  #ABOUT {
+    max-width: 900px;
+  }
+  .skill p {
+    width: 590px;
+  }
+  .line {
+    background-position: 0px 115px;
+  }
+  .line ul li {
+    margin-right: 100px;
+  }
+  .line .job2 li {
+    padding-left: 15px;
+  }
+  /* 作品集 */
+  .PORTFOLIO {
+    max-width: 900px;
+  }
+  /* 專案設計 */
+  .pd_p {
+    margin: 0 10px 45px 10px;
+  }
+  .pd_p img {
+    width: 425px;
+  }
+  /* 網頁設計 */
+  .wd_p {
+    margin: 0 10px 45px 10px;
+  }
+  .wd_p img {
+    width: 425px;
+  }
+  /* BANNER設計 */
+  .BD {
+    margin-top: 80px;
+  }
+  .BD .subtitle {
+    width: 220px;
+  }
+  .bd_p img {
+    width: 335px;
+  }
+  /* UIUX設計 */
+  .UIUXBG {
+    width: 100%;
+    margin-bottom: 80px;
+  }
+  .UIUX {
+    width: 100%;
+    height: auto;
+    background-image: none;
+  }
+  .UIUX .title {
+    width: 100%;
+    height: 300px;
+    margin-left: 0px;
+  }
+  .UIUX .title p {
+    display: block;
+    font-size: 40px;
+    color: #666666;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 80px;
+  }
+  .UIUX .title span {
+    display: block;
+    font-size: 25px;
+    color: #666666;
+    font-style: italic;
+    text-align: center;
+  }
+  .UIUXmore a {
+    padding: 10px;
+    float: none;
+    margin: 20px auto;
+    border: 2px solid #666666;
+    border-radius: 10px;
+  }
+  .UIUXmore a:hover {
+    border: 2px solid #ffffff;
+  }
+  /* 平面設計 */
+  .GD {
+    margin-top: 350px;
+    height: 800px;
+  }
+  /* 多媒體設計 */
+  .md_p {
+    margin: 0 10px 45px 10px;
+  }
+  .md_p img {
+    width: 425px;
+  }
+
+  /* 聯絡我 */
+
+  #CONTACT {
+    height: 650px;
+  }
+  .contactarea {
+    max-width: 900px;
+  }
+  .contactarea .title {
+    margin: 55px 0px 55px 180px;
+  }
+  .FOOTER {
+    margin: 270px 20px 0 0;
+  }
+}

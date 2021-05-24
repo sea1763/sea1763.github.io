@@ -1,0 +1,438 @@
+body {
+  font-family: 微軟正黑體, Arial, Helvetica, sans-serif;
+}
+
+/* --電腦版型------------------------------------- */
+/* 選單 */
+#TOPMENU {
+  display: none;
+}
+.MENU {
+  position: fixed;
+  height: 65px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 1px 5px #c2c2c2;
+  padding-bottom: 20px;
+}
+.LOGO img {
+  display: block;
+  float: left;
+  padding: 20px;
+  height: 50px;
+  width: auto;
+  transition: 1s;
+}
+.MENU li {
+  display: inline-block;
+  margin-left: 40px;
+}
+.MENU li a {
+  display: block;
+  width: 60px;
+  height: 90px;
+  font-size: 20px;
+  line-height: 85px;
+  color: #6b6b6b;
+  font-weight: 1000;
+  text-decoration: none;
+}
+.MENU li a:hover,
+.MENU .current-active a {
+  color: #13a9c7;
+  transition: 0.1s;
+}
+
+.MENU li#protfolio:hover > ul {
+  display: block;
+}
+/* 隱藏選單 */
+li#protfolio ul.SUBMENU {
+  position: absolute;
+  display: none;
+  box-shadow: #c2c2c2 0 0 5px;
+  background-color: #ffffff;
+  padding: 10px;
+  margin-left: -60px;
+}
+#protfolio .SUBMENU li {
+  display: block;
+  margin-left: 0;
+}
+#protfolio .SUBMENU li a {
+  font-size: 18px;
+  color: #6b6b6b;
+  text-decoration: none;
+  text-align: center;
+  width: 160px;
+  height: 40px;
+  line-height: 40px;
+  font-weight: 600;
+}
+#protfolio .SUBMENU li a:hover {
+  font-size: 18px;
+  background-color: #ffe747;
+  transition: 0.3s;
+}
+#TOP-MENU {
+  display: none;
+}
+
+/* Maintitle */
+#webMaintitle {
+  display: inline-block;
+  width: 100%;
+  height: 183px;
+  margin: 80px auto 0 auto;
+  background-image: url(img/webMainbg.jpg);
+}
+.webTitle {
+  margin: 0 auto;
+  padding: 40px 0 0 0;
+  max-width: 1200px;
+}
+.webTitle h1 {
+  font-size: 50px;
+  font-weight: 1000;
+  color: #ffffff;
+}
+.webTitle p {
+  font-size: 25px;
+  color: #ffffff;
+  font-style: italic;
+}
+
+/* 網頁設計 */
+.wd {
+  margin: 100px auto;
+  max-width: 1200px;
+}
+.wd a {
+  text-decoration: none;
+}
+.wd_p {
+  display: inline-block;
+  margin: 0 15px 45px 15px;
+}
+.wd_p p {
+  font-size: 25px;
+  color: #454545;
+  font-weight: 900;
+  line-height: 45px;
+}
+.wd_p span {
+  font-size: 16px;
+  color: #999999;
+}
+/* 網站地圖 */
+#MAP {
+  background-image: url(img/FOOTERBG.png);
+  height: 600px;
+  right: 0;
+  bottom: 0;
+}
+.maparea {
+  background-color: #ffe747;
+  max-width: 1200px;
+  height: 340px;
+  margin: 0 auto;
+}
+.maparea .title {
+  padding-top: 80px;
+}
+.maparea .title ul {
+  width: 1080px;
+  margin: 0 auto;
+}
+.maparea .title ul li {
+  margin: 20px;
+  float: left;
+}
+.maparea .title a {
+  text-decoration: none;
+}
+.maparea h1 {
+  width: 140px;
+  height: 140px;
+  font-size: 16px;
+  color: #6b6b6b;
+  line-height: 210px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 140px;
+  user-select: none;
+}
+.maparea .title h1.pd {
+  background-image: url(img/icon_pd.png);
+  background-repeat: no-repeat;
+  margin: 0;
+  background-position: 45px 40px;
+}
+.maparea .title h1.wd {
+  background-image: url(img/icon_wd.png);
+  background-repeat: no-repeat;
+  margin: 0;
+  background-position: 35px 35px;
+}
+.maparea .title h1.bn {
+  background-image: url(img/icon_banner.png);
+  background-repeat: no-repeat;
+  margin: 0;
+  background-position: 45px 35px;
+}
+.maparea .title h1.uxui {
+  background-image: url(img/icon_uiux.png);
+  background-repeat: no-repeat;
+  margin: 0;
+  background-position: 55px 30px;
+}
+.maparea .title h1.gd {
+  background-image: url(img/icon_gd.png);
+  background-repeat: no-repeat;
+  margin: 0;
+  background-position: 50px 35px;
+}
+.maparea .title h1.md {
+  background-image: url(img/icon_md.png);
+  background-repeat: no-repeat;
+  margin: 0;
+  background-position: 40px 35px;
+}
+.FOOTER {
+  margin: 220px 30px 0 0;
+}
+.FOOTER p {
+  font-size: 16px;
+  color: #ffffff;
+  text-align: right;
+}
+/* scrollTOP */
+.scrollTOP {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  background-color: #ffe747;
+  border-radius: 100px;
+  bottom: 60px;
+  right: 50px;
+  opacity: 1;
+  user-select: none;
+  cursor: pointer;
+}
+.scrollTOP p {
+  font-size: 22px;
+  color: #6b6b6b;
+  text-align: center;
+}
+
+.scrollTOP img {
+  display: block;
+  margin: 30px auto 0 auto;
+}
+.scrollTOP a {
+  text-decoration: none;
+}
+.scrollTOP1 {
+  opacity: 0;
+  transition: 1s;
+}
+/* --手機版型------------------------------------- */
+@media screen and (max-width: 767px) {
+  html,
+  body {
+    -webkit-text-size-adjust: none; /* iPhone 旋轉後 文字不要放大 */
+  }
+  #UL li {
+    float: none;
+    width: 100%;
+  }
+  #UL.active {
+    display: none; /*用jq控制的toggleClass*/
+  }
+  #UL {
+    height: auto;
+    background-color: #ffffff;
+  }
+  #TOPMENU {
+    position: absolute;
+    display: block;
+    width: 50px;
+    font-size: 30px;
+    padding: 20px;
+  }
+  a#TOPMENU {
+    display: block;
+    right: 0%;
+    text-decoration: none;
+    color: #69bcd5;
+  }
+  /* 選單 */
+
+  .MENU {
+    position: relative;
+    background-color: white;
+    box-shadow: 0px 1px 5px #c2c2c2;
+    padding-bottom: 20px;
+  }
+  .at_topLOGO img {
+    height: 50px;
+    width: auto;
+    transition: 1s;
+  }
+  .at_top {
+    height: 65px;
+  }
+  .MENU li {
+    margin: 0;
+  }
+  .MENU li a {
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+  }
+  .LOGO img {
+    padding: 20px;
+    margin-left: 0px;
+    position: relative;
+  }
+  #protfolio .SUBMENU li {
+    display: none; /*讓submenu消失*/
+  }
+  /* Maintitle */
+  #webMaintitle {
+    margin: 0 auto;
+  }
+  .webTitle {
+    max-width: 900px;
+    padding-left: 30px;
+  }
+  /* 網頁設計 */
+  .wd {
+    margin-top: 80px;
+    max-width: 900px;
+  }
+  .wd a {
+    text-decoration: none;
+  }
+  .wd_p {
+    display: inline-block;
+    margin: 0 15px 45px 15px;
+  }
+  .wd_p p {
+    text-align: center;
+  }
+  .wd_p img {
+    width: 100%;
+  }
+  .wd_p span {
+    display: none;
+  }
+  /* 網站地圖 */
+  #MAP {
+    background-image: none;
+    width: 100%;
+  }
+  .maparea {
+    width: 100%;
+    height: 700px;
+  }
+  .maparea .title {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .maparea .title ul {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+  .maparea .title ul li {
+    margin: 20px;
+    float: left;
+  }
+  .maparea .title a {
+    text-decoration: none;
+  }
+  .FOOTER {
+    margin: 10px;
+  }
+  .FOOTER p {
+    color: #666666;
+    text-align: center;
+  }
+  /* scrollTOP */
+  .scrollTOP {
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .scrollTOP img {
+    margin: 20px auto 0 auto;
+  }
+}
+
+/* --平板版型------------------------------------- */
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  html,
+  body {
+    -webkit-text-size-adjust: none; /* iPhone 旋轉後 文字不要放大 */
+  }
+  #UL li {
+    float: none;
+    width: 100%;
+  }
+  #UL.active {
+    display: none; /*用jq控制的toggleClass*/
+  }
+  #UL {
+    height: auto;
+    background-color: #ffffff;
+  }
+  #TOPMENU {
+    position: absolute;
+    display: block;
+    width: 50px;
+    font-size: 30px;
+    padding: 20px;
+  }
+  a#TOPMENU {
+    display: block;
+    right: 0%;
+    text-decoration: none;
+    color: #69bcd5;
+  }
+  /* 選單 */
+
+  .MENU {
+    position: relative;
+    background-color: white;
+    box-shadow: 0px 1px 5px #c2c2c2;
+    padding-bottom: 20px;
+  }
+  .at_topLOGO img {
+    height: 50px;
+    width: auto;
+    transition: 1s;
+  }
+  .at_top {
+    height: 65px;
+  }
+  .MENU li {
+    margin: 0;
+  }
+  .MENU li a {
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+  }
+  .LOGO img {
+    padding: 20px;
+    margin-left: 0px;
+    position: relative;
+  }
+  #protfolio .SUBMENU li {
+    display: none; /*讓submenu消失*/
+  }
+}
