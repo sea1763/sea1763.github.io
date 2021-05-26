@@ -14,6 +14,7 @@ body {
   background-color: white;
   box-shadow: 0px 1px 5px #c2c2c2;
   padding-bottom: 20px;
+  z-index: 100;
 }
 .LOGO img {
   display: block;
@@ -101,7 +102,31 @@ li#protfolio ul.SUBMENU {
   color: #ffffff;
   font-style: italic;
 }
-
+/* 專案設計 */
+.pd {
+  margin: 100px auto;
+  max-width: 1200px;
+}
+.pd a {
+  text-decoration: none;
+}
+.pd img:hover {
+  opacity: 0.8;
+}
+.pd_p {
+  display: inline-block;
+  margin: 0 15px 45px 15px;
+}
+.pd_p p {
+  font-size: 25px;
+  color: #454545;
+  font-weight: 900;
+  line-height: 45px;
+}
+.pd_p span {
+  font-size: 16px;
+  color: #999999;
+}
 /* 網頁設計 */
 .wd {
   margin: 100px auto;
@@ -109,6 +134,9 @@ li#protfolio ul.SUBMENU {
 }
 .wd a {
   text-decoration: none;
+}
+.wd img:hover {
+  opacity: 0.8;
 }
 .wd_p {
   display: inline-block;
@@ -121,6 +149,105 @@ li#protfolio ul.SUBMENU {
   line-height: 45px;
 }
 .wd_p span {
+  font-size: 16px;
+  color: #999999;
+}
+/*Banner設計*/
+.bd {
+  margin: 5px auto 100px auto;
+  max-width: 100%;
+}
+.zoomwall {
+  font-size: 0;
+  overflow: hidden;
+}
+.zoomwall img {
+  height: 15vw;
+  opacity: 1;
+  vertical-align: top;
+  transform-origin: 0% 0%;
+  transition-property: transform, opacity;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  -webkit-transform-origin: 0% 0%;
+  -webkit-transition-property: transform, opacity;
+  -webkit-transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  outline: 5px solid #fff;
+  margin-bottom: 3px;
+}
+/* UIUX設計 */
+.UIUXd {
+  margin: 100px auto;
+  max-width: 1200px;
+}
+.UIUXd a {
+  text-decoration: none;
+}
+.UIUXd img:hover {
+  opacity: 0.8;
+}
+.UIUXd_p {
+  display: inline-block;
+  margin: 0 15px 45px 15px;
+}
+.UIUXd_p p {
+  font-size: 25px;
+  color: #454545;
+  font-weight: 900;
+  line-height: 45px;
+}
+.UIUXd_p span {
+  font-size: 16px;
+  color: #999999;
+}
+/*平面設計*/
+.gd {
+  margin: 5px auto 100px auto;
+  max-width: 100%;
+}
+.zoomwall {
+  font-size: 0;
+  overflow: hidden;
+}
+.zoomwall img {
+  height: 15vw;
+  opacity: 1;
+  vertical-align: top;
+  transform-origin: 0% 0%;
+  transition-property: transform, opacity;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  -webkit-transform-origin: 0% 0%;
+  -webkit-transition-property: transform, opacity;
+  -webkit-transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  outline: 5px solid #fff;
+  margin-bottom: 3px;
+}
+
+/* 多媒體設計 */
+.md {
+  margin: 100px auto;
+  max-width: 1200px;
+}
+.md a {
+  text-decoration: none;
+}
+.md img:hover {
+  opacity: 0.8;
+}
+.md_p {
+  display: inline-block;
+  margin: 0 15px 45px 15px;
+}
+.md_p p {
+  font-size: 25px;
+  color: #454545;
+  font-weight: 900;
+  line-height: 45px;
+}
+.md_p span {
   font-size: 16px;
   color: #999999;
 }
@@ -150,6 +277,9 @@ li#protfolio ul.SUBMENU {
 }
 .maparea .title a {
   text-decoration: none;
+}
+.maparea .title a:hover h1 {
+  color: #13a9c7;
 }
 .maparea h1 {
   width: 140px;
@@ -306,6 +436,27 @@ li#protfolio ul.SUBMENU {
     max-width: 900px;
     padding-left: 30px;
   }
+  /* 專案設計 */
+  .pd {
+    margin-top: 80px;
+    max-width: 900px;
+  }
+  .pd a {
+    text-decoration: none;
+  }
+  .pd_p {
+    display: inline-block;
+    margin: 0 15px 45px 15px;
+  }
+  .pd_p p {
+    text-align: center;
+  }
+  .pd_p img {
+    width: 100%;
+  }
+  .pd_p span {
+    display: none;
+  }
   /* 網頁設計 */
   .wd {
     margin-top: 80px;
@@ -327,10 +478,54 @@ li#protfolio ul.SUBMENU {
   .wd_p span {
     display: none;
   }
+
+  /* UIUX設計 */
+  .UIUXd {
+    margin-top: 80px;
+    max-width: 900px;
+  }
+  .UIUXd a {
+    text-decoration: none;
+  }
+  .UIUXd_p {
+    display: inline-block;
+    margin: 0 15px 45px 15px;
+  }
+  .UIUXd_p p {
+    text-align: center;
+  }
+  .UIUXd_p img {
+    width: 100%;
+  }
+  .UIUXd_p span {
+    display: none;
+  }
+  /* 多媒體設計 */
+  .md {
+    margin-top: 80px;
+    max-width: 900px;
+  }
+  .md a {
+    text-decoration: none;
+  }
+  .md_p {
+    display: inline-block;
+    margin: 0 15px 45px 15px;
+  }
+  .md_p p {
+    text-align: center;
+  }
+  .md_p img {
+    width: 100%;
+  }
+  .md_p span {
+    display: none;
+  }
   /* 網站地圖 */
   #MAP {
     background-image: none;
     width: 100%;
+    height: 780px;
   }
   .maparea {
     width: 100%;
@@ -352,7 +547,7 @@ li#protfolio ul.SUBMENU {
     text-decoration: none;
   }
   .FOOTER {
-    margin: 10px;
+    margin: 30px;
   }
   .FOOTER p {
     color: #666666;
@@ -434,5 +629,78 @@ li#protfolio ul.SUBMENU {
   }
   #protfolio .SUBMENU li {
     display: none; /*讓submenu消失*/
+  }
+  /* Maintitle */
+  #webMaintitle {
+    margin: 0 auto;
+  }
+  .webTitle {
+    max-width: 900px;
+    padding-left: 30px;
+  }
+  /* 專案設計 */
+  .pd {
+    max-width: 900px;
+  }
+  .pd_p {
+    margin: 0 10px 45px 10px;
+  }
+  .pd_p img {
+    width: 425px;
+  }
+  /* 網頁設計 */
+  .wd {
+    max-width: 900px;
+  }
+  .wd_p {
+    margin: 0 10px 45px 10px;
+  }
+  .wd_p img {
+    width: 425px;
+  }
+  /* UIUX設計 */
+  .UIUXd {
+    max-width: 900px;
+  }
+  .UIUXd_p {
+    margin: 0 10px 45px 10px;
+  }
+  .UIUXd_p img {
+    width: 425px;
+  }
+  /* 多媒體設計 */
+  .md {
+    max-width: 900px;
+  }
+  .md_p {
+    margin: 0 10px 45px 10px;
+  }
+  .md_p img {
+    width: 425px;
+  }
+  /* 網站地圖 */
+  #MAP {
+    background-image: none;
+    width: 100%;
+    height: 500px;
+  }
+  .maparea {
+    height: 400px;
+  }
+  .maparea .title {
+    padding-top: 20px;
+  }
+  .maparea .title ul {
+    max-width: 550px;
+  }
+  .maparea .title ul li {
+    margin: 20px;
+  }
+  .FOOTER {
+    margin: 30px;
+  }
+  .FOOTER p {
+    color: #666666;
+    text-align: center;
   }
 }

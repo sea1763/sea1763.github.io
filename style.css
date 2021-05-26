@@ -15,6 +15,7 @@ body {
   background-color: white;
   box-shadow: 0px 1px 5px #c2c2c2;
   padding-bottom: 20px;
+  z-index: 100;
 }
 .at_top {
   background-color: transparent;
@@ -337,6 +338,9 @@ h2 {
 .pd a {
   text-decoration: none;
 }
+.pd img:hover {
+  opacity: 0.8;
+}
 .pd_p {
   display: inline-block;
   margin: 0 15px 45px 15px;
@@ -357,6 +361,10 @@ h2 {
 }
 .wd a {
   text-decoration: none;
+}
+
+.wd img:hover {
+  opacity: 0.8;
 }
 .wd_p {
   display: inline-block;
@@ -409,6 +417,7 @@ h2 {
   border-bottom: 3px solid #999999;
   margin: 20px auto 0 auto;
 }
+
 .BDmore a:hover {
   color: #13a9c7;
   font-weight: 1000;
@@ -425,6 +434,9 @@ h2 {
 }
 .bd_p img {
   width: 445px;
+}
+.bd img:hover {
+  opacity: 0.8;
 }
 .bd a {
   text-decoration: none;
@@ -537,6 +549,10 @@ h2 {
   text-decoration: none;
 }
 
+.gd img:hover {
+  opacity: 0.8;
+}
+
 /* 多媒體設計 */
 .md {
   display: block;
@@ -544,6 +560,9 @@ h2 {
 }
 .md a {
   text-decoration: none;
+}
+.md img:hover {
+  opacity: 0.8;
 }
 .md_p {
   display: inline-block;
@@ -1261,7 +1280,6 @@ h2 {
   }
 
   /* 聯絡我 */
-
   #CONTACT {
     height: 650px;
   }
