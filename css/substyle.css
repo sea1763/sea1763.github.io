@@ -85,7 +85,7 @@ li#protfolio ul.SUBMENU {
   width: 100%;
   height: 183px;
   margin: 80px auto 0 auto;
-  background-image: url(img/webMainbg.jpg);
+  background-image: url(/img/webMainbg.jpg);
 }
 .webTitle {
   margin: 0 auto;
@@ -101,6 +101,26 @@ li#protfolio ul.SUBMENU {
   font-size: 25px;
   color: #ffffff;
   font-style: italic;
+}
+/*back BTN*/
+.back a {
+  display: block;
+  width: 100px;
+  height: 33px;
+  text-decoration: none;
+  color: #454545;
+  float: right;
+  font-size: 25px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  border-bottom: 3px solid #999999;
+  margin-bottom: 50px;
+}
+.back a:hover {
+  color: #13a9c7;
+  font-weight: 1000;
+  border-bottom: 3px solid #ffe747;
+  transition: 0.3s;
 }
 /* 專案設計 */
 .pd {
@@ -127,6 +147,21 @@ li#protfolio ul.SUBMENU {
   font-size: 16px;
   color: #999999;
 }
+.pdcontent {
+  max-width: 1200px;
+  margin: 100px auto;
+}
+.pdcontent h1 {
+  font-size: 32px;
+  color: #454545;
+  margin-bottom: 50px;
+}
+.pdcontent img {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
 /* 網頁設計 */
 .wd {
   margin: 100px auto;
@@ -253,7 +288,7 @@ li#protfolio ul.SUBMENU {
 }
 /* 網站地圖 */
 #MAP {
-  background-image: url(img/FOOTERBG.png);
+  background-image: url(/img/FOOTERBG.png);
   height: 600px;
   right: 0;
   bottom: 0;
@@ -293,37 +328,37 @@ li#protfolio ul.SUBMENU {
   user-select: none;
 }
 .maparea .title h1.pd {
-  background-image: url(img/icon_pd.png);
+  background-image: url(/img/icon_pd.png);
   background-repeat: no-repeat;
   margin: 0;
   background-position: 45px 40px;
 }
 .maparea .title h1.wd {
-  background-image: url(img/icon_wd.png);
+  background-image: url(/img/icon_wd.png);
   background-repeat: no-repeat;
   margin: 0;
   background-position: 35px 35px;
 }
 .maparea .title h1.bn {
-  background-image: url(img/icon_banner.png);
+  background-image: url(/img/icon_banner.png);
   background-repeat: no-repeat;
   margin: 0;
   background-position: 45px 35px;
 }
 .maparea .title h1.uxui {
-  background-image: url(img/icon_uiux.png);
+  background-image: url(/img/icon_uiux.png);
   background-repeat: no-repeat;
   margin: 0;
   background-position: 55px 30px;
 }
 .maparea .title h1.gd {
-  background-image: url(img/icon_gd.png);
+  background-image: url(/img/icon_gd.png);
   background-repeat: no-repeat;
   margin: 0;
   background-position: 50px 35px;
 }
 .maparea .title h1.md {
-  background-image: url(img/icon_md.png);
+  background-image: url(/img/icon_md.png);
   background-repeat: no-repeat;
   margin: 0;
   background-position: 40px 35px;
@@ -436,6 +471,14 @@ li#protfolio ul.SUBMENU {
     max-width: 900px;
     padding-left: 30px;
   }
+  /*back BTN*/
+  .back a {
+    padding: 10px;
+    float: none;
+    margin: 0 auto;
+    border: 2px solid #c2c2c2;
+    border-radius: 10px;
+  }
   /* 專案設計 */
   .pd {
     margin-top: 80px;
@@ -456,6 +499,13 @@ li#protfolio ul.SUBMENU {
   }
   .pd_p span {
     display: none;
+  }
+  .pdcontent {
+    max-width: 900px;
+    margin: 100px auto;
+  }
+  .pdcontent img {
+    width: 100%;
   }
   /* 網頁設計 */
   .wd {
@@ -647,6 +697,13 @@ li#protfolio ul.SUBMENU {
   }
   .pd_p img {
     width: 425px;
+  }
+  .pdcontent {
+    max-width: 900px;
+    margin: 100px auto;
+  }
+  .pdcontent img {
+    width: 100%;
   }
   /* 網頁設計 */
   .wd {

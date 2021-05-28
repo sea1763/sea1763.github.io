@@ -27,25 +27,24 @@ $(window).scroll(function(e){
 
 
 $(function(){
-  /* MENU跑卷軸位置 */
-	$(".scrollTOP,.LOGO,#home").click(function(){
-		$("html,body").stop(true,false).animate({scrollTop:0},1000,"swing");
-		return false;
-		});
-		
-	$("#about").click(function(){
-		$("html,body").stop(true,false).animate({scrollTop:910},1000,"swing");
-		return false;
-		});
-	$("#protfolio").click(function(){
-		$("html,body").stop(true,false).animate({scrollTop:1860},1000,"swing");
-		return false;
-		});
-	$("#contact").click(function(){
-		$("html,body").stop(true,false).animate({scrollTop:7100},1000,"swing");
-		return false;
-		});
-
+    /* MENU跑卷軸位置 */
+    $(".scrollTOP,#home").click(function () {
+    $("html,body").stop(true, false).animate({ scrollTop: 0 }, 1000, "swing");
+    return false;
+      });
+    $("#about").click(function () {
+        $("html,body").stop(true, false).animate({ scrollTop: 910 }, 1000, "swing");
+        return false;
+      });
+    $("#protfolioMain").click(function () {
+        $("html,body").stop(true, false).animate({ scrollTop: 1860 }, 1000, "swing");
+        return false;
+      });
+    $("#contact").click(function () {
+        $("html,body").stop(true, false).animate({ scrollTop: 7100 }, 1000, "swing");
+        return false;
+      });  
+      
     /* MENU toggle */
     document.getElementById('TOPMENU').addEventListener('click', function (e) {
        $(this).toggleClass('active');
