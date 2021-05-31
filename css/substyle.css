@@ -156,6 +156,26 @@ li#protfolio ul.SUBMENU {
   color: #454545;
   margin-bottom: 50px;
 }
+.pdcontent span a {
+  display: block;
+  float: right;
+  width: 120px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 800;
+  color: #ababab;
+  background-image: url(/img/icon_link.png);
+  background-repeat: no-repeat;
+  background-position: 95px 9px;
+  text-decoration: none;
+  border: 1px solid #ababab;
+  padding: 5px 5px 5px 10px;
+}
+.pdcontent span a:hover {
+  background-color: #ffe747;
+  transition: 1s;
+}
 .pdcontent img {
   display: block;
   margin: 0;
