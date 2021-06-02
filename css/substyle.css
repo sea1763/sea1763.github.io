@@ -115,6 +115,7 @@ li#protfolio ul.SUBMENU {
   letter-spacing: 5px;
   border-bottom: 3px solid #999999;
   margin-bottom: 50px;
+  margin-top: 20px;
 }
 .back a:hover {
   color: #13a9c7;
@@ -122,6 +123,53 @@ li#protfolio ul.SUBMENU {
   border-bottom: 3px solid #ffe747;
   transition: 0.3s;
 }
+/*內容分頁統一樣式設定*/
+.subcontent {
+  max-width: 1200px;
+  margin: 100px auto;
+}
+.subcontent h1 {
+  font-size: 32px;
+  color: #454545;
+  margin-bottom: 50px;
+}
+.subcontent span a {
+  display: block;
+  float: right;
+  width: 120px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 800;
+  color: #ababab;
+  background-image: url(/img/icon_link.png);
+  background-repeat: no-repeat;
+  background-position: 95px 9px;
+  text-decoration: none;
+  border: 1px solid #ababab;
+  padding: 5px 5px 5px 10px;
+}
+.subcontent span a:hover {
+  background-color: #ffe747;
+  transition: 1s;
+}
+.subcontent img {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.subcontent img.shadow {
+  box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+.subcontent ul {
+  display: block;
+  min-width: 1200px;
+}
+.subcontent ul li {
+  float: left;
+}
+
 /* 專案設計 */
 .pd {
   margin: 100px auto;
@@ -146,40 +194,6 @@ li#protfolio ul.SUBMENU {
 .pd_p span {
   font-size: 16px;
   color: #999999;
-}
-.pdcontent {
-  max-width: 1200px;
-  margin: 100px auto;
-}
-.pdcontent h1 {
-  font-size: 32px;
-  color: #454545;
-  margin-bottom: 50px;
-}
-.pdcontent span a {
-  display: block;
-  float: right;
-  width: 120px;
-  height: 30px;
-  cursor: pointer;
-  font-size: 20px;
-  font-weight: 800;
-  color: #ababab;
-  background-image: url(/img/icon_link.png);
-  background-repeat: no-repeat;
-  background-position: 95px 9px;
-  text-decoration: none;
-  border: 1px solid #ababab;
-  padding: 5px 5px 5px 10px;
-}
-.pdcontent span a:hover {
-  background-color: #ffe747;
-  transition: 1s;
-}
-.pdcontent img {
-  display: block;
-  margin: 0;
-  padding: 0;
 }
 
 /* 網頁設計 */
@@ -499,6 +513,21 @@ li#protfolio ul.SUBMENU {
     border: 2px solid #c2c2c2;
     border-radius: 10px;
   }
+  /*內容分頁統一樣式設定*/
+  .subcontent {
+    max-width: 900px;
+    margin: 100px auto;
+  }
+  .subcontent img {
+    width: 100%;
+  }
+  .subcontent ul {
+    display: block;
+    min-width: 600px;
+  }
+  .subcontent ul li img {
+    width: 60%;
+  }
   /* 專案設計 */
   .pd {
     margin-top: 80px;
@@ -520,13 +549,7 @@ li#protfolio ul.SUBMENU {
   .pd_p span {
     display: none;
   }
-  .pdcontent {
-    max-width: 900px;
-    margin: 100px auto;
-  }
-  .pdcontent img {
-    width: 100%;
-  }
+
   /* 網頁設計 */
   .wd {
     margin-top: 80px;
@@ -707,6 +730,18 @@ li#protfolio ul.SUBMENU {
   .webTitle {
     max-width: 900px;
     padding-left: 30px;
+  }
+  /*內容分頁統一樣式設定*/
+  .subcontent {
+    max-width: 900px;
+    margin: 100px auto;
+  }
+  .subcontent img {
+    width: 100%;
+  }
+  .subcontent ul {
+    display: block;
+    min-width: 900px;
   }
   /* 專案設計 */
   .pd {
