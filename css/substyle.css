@@ -406,7 +406,8 @@ li#protfolio ul.SUBMENU {
   text-align: right;
 }
 /* scrollTOP */
-.scrollTOP {
+.scrollTOP1 {
+  display: none;
   position: fixed;
   width: 100px;
   height: 100px;
@@ -418,21 +419,21 @@ li#protfolio ul.SUBMENU {
   user-select: none;
   cursor: pointer;
 }
-.scrollTOP p {
+.scrollTOP1 p {
   font-size: 22px;
   color: #6b6b6b;
   text-align: center;
 }
 
-.scrollTOP img {
+.scrollTOP1 img {
   display: block;
   margin: 30px auto 0 auto;
 }
-.scrollTOP a {
+.scrollTOP1 a {
   text-decoration: none;
 }
 .scrollTOP1 {
-  opacity: 0;
+  opacity: 1;
   transition: 1s;
 }
 /* --手機版型------------------------------------- */
@@ -647,7 +648,7 @@ li#protfolio ul.SUBMENU {
     text-align: center;
   }
   /* scrollTOP */
-  .scrollTOP {
+  .scrollTOP1 {
     width: 80px;
     height: 80px;
     border-radius: 80px;
@@ -656,7 +657,7 @@ li#protfolio ul.SUBMENU {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   }
 
-  .scrollTOP img {
+  .scrollTOP1 img {
     margin: 20px auto 0 auto;
   }
 }

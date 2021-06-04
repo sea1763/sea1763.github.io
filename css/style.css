@@ -627,6 +627,7 @@ h2 {
 }
 /* scrollTOP */
 .scrollTOP {
+  display: none;
   position: fixed;
   width: 100px;
   height: 100px;
@@ -651,8 +652,8 @@ h2 {
 .scrollTOP a {
   text-decoration: none;
 }
-.scrollTOP1 {
-  opacity: 0;
+.scrollTOP {
+  opacity: 1;
   transition: 1s;
 }
 /* --手機版型------------------------------------- */

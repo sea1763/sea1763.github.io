@@ -13,22 +13,27 @@ $(window).scroll(function(e){
 });
 
 /*scrollTOP出現*/ 
-$(window).scroll(function(e){
-  if ($(window).scrollTop()<=500)
-  {
-    $(".scrollTOP").addClass("scrollTOP1");
-  }
-    else
-  {
-    $(".scrollTOP").removeClass("scrollTOP1");
-  }
+$(window).scroll(function() {
+    if ( $(this).scrollTop() > 300){
+        $(".scrollTOP").fadeIn("fast");
+    } else {
+        $(".scrollTOP").stop().fadeOut("fast");
+    }
+});
+/*scrollTOP1出現  分頁*/
+$(window).scroll(function() {
+    if ( $(this).scrollTop() > 300){
+        $(".scrollTOP1").fadeIn("fast");
+    } else {
+        $(".scrollTOP1").stop().fadeOut("fast");
+    }
 });
 
 
 
 $(function(){
     /* MENU跑卷軸位置 */
-    $(".scrollTOP,#home").click(function () {
+    $(".scrollTOP,.scrollTOP1,#home").click(function () {
     $("html,body").stop(true, false).animate({ scrollTop: 0 }, 1000, "swing");
     return false;
       });
