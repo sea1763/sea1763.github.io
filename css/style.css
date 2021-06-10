@@ -234,6 +234,7 @@ h2 {
   font-size: 16px;
   line-height: 25px;
   color: #6b6b6b;
+  text-align: justify;
 }
 .line {
   margin-left: 30px;
@@ -1068,9 +1069,424 @@ h2 {
     margin: 20px auto 0 auto;
   }
 }
+/* --平板直式版型------------------------------------- */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  html,
+  body {
+    -webkit-text-size-adjust: none; /* iPhone 旋轉後 文字不要放大 */
+  }
+  #UL li {
+    float: none;
+    width: 100%;
+  }
+  #UL.active {
+    display: none; /*用jq控制的toggleClass*/
+  }
+  #UL {
+    height: auto;
+    background-color: #ffffff;
+  }
+  #TOPMENU {
+    position: absolute;
+    display: block;
+    width: 50px;
+    font-size: 30px;
+    padding: 20px;
+  }
+  a#TOPMENU {
+    display: block;
+    right: 0%;
+    text-decoration: none;
+    color: #69bcd5;
+  }
+  /* 選單 */
 
-/* --平板版型------------------------------------- */
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .MENU {
+    position: relative;
+    background-color: white;
+    box-shadow: 0px 1px 5px #c2c2c2;
+    padding-bottom: 20px;
+  }
+  .at_topLOGO img {
+    height: 50px;
+    width: auto;
+    transition: 1s;
+  }
+  .at_top {
+    height: 65px;
+  }
+  .MENU li {
+    margin: 0;
+  }
+  .MENU li a {
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+  }
+  .LOGO img {
+    padding: 20px;
+    margin-left: 0px;
+    position: relative;
+  }
+  #protfolio .SUBMENU li {
+    display: none; /*讓submenu消失*/
+  }
+  /* 主頁區 */
+  #MAIN_BG {
+    display: inline-block;
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 231, 71, 1) 50%,
+      rgba(255, 231, 71, 1) 50%
+    );
+  }
+  .maincontent {
+    width: 100%;
+  }
+  .maintitle {
+    width: 350px;
+    height: 220px;
+    margin: 30px 50px;
+    float: left;
+  }
+  .mainbg {
+    margin-top: 0px;
+  }
+  .mainbg img {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+  }
+  h1 {
+    font-size: 55px;
+    line-height: 60px;
+    user-select: none;
+  }
+  h2 {
+    font-size: 55px;
+    line-height: 60px;
+    -webkit-text-stroke: 1px #13a9c7;
+    -webkit-text-fill-color: transparent;
+  }
+  .maintitle p {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .brief {
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 231, 71, 1) 50%,
+      rgba(255, 231, 71, 1) 50%
+    );
+    height: 100px;
+    margin-bottom: 30px;
+  }
+  /* 關於我 */
+  #ABOUT {
+    width: 90%;
+  }
+  #ABOUT h1 {
+    font-size: 40px;
+    line-height: 200px;
+    border-radius: 200px;
+    width: 200px;
+    height: 200px;
+  }
+  .skill {
+    margin: 50px auto 0px auto;
+    height: 200px;
+  }
+  .skill img {
+    display: none;
+  }
+  .skill p {
+    margin: 0 auto;
+    height: auto;
+    width: 100%;
+    line-height: 25px;
+    font-size: 20px;
+    color: #6b6b6b;
+    text-align: justify;
+    margin-bottom: 30px;
+  }
+  .line {
+    background-image: none;
+    height: auto;
+    margin-bottom: 30px;
+  }
+  .line .time {
+    display: none;
+  }
+  .line ul li {
+    margin-right: 0px;
+    margin-bottom: 5px;
+  }
+  .line .job1 li {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: #12a8c7;
+
+    font-size: 20px;
+  }
+  .line .job2 li {
+    display: flex;
+    justify-content: center;
+    padding-left: 0px;
+    width: 100%;
+    color: #12a8c7;
+
+    font-size: 20px;
+  }
+  .line ul .time1,
+  .line ul .time2 {
+    display: none;
+  }
+  /* 作品集 */
+  .p_title h1 {
+    font-size: 40px;
+    line-height: 100px;
+    height: 100px;
+  }
+  .PORTFOLIO {
+    width: 100%;
+  }
+  .subtitle p {
+    display: block;
+    text-align: center;
+  }
+  .subtitle span {
+    display: none;
+  }
+  .more a {
+    padding: 10px;
+    float: none;
+    margin: 0 auto;
+    border: 2px solid #c2c2c2;
+    border-radius: 10px;
+  }
+  .more a:hover {
+    border: 2px solid #ffe747;
+  }
+  /* 專案設計 */
+  .pd {
+    margin: 0 auto 60px auto;
+    width: 565px;
+  }
+  .pd_p {
+    margin: 0 auto;
+  }
+  .pd_p p {
+    text-align: center;
+  }
+  .pd_p img {
+    width: 100%;
+  }
+  .pd_p span {
+    display: none;
+  }
+  /* 網頁設計 */
+  .wd {
+    margin: 0 auto 60px auto;
+    width: 565px;
+  }
+  .wd_p {
+    margin: 0 0 30px 0;
+  }
+  .wd_p p {
+    text-align: center;
+  }
+  .wd_p img {
+    width: 100%;
+  }
+  .wd_p span {
+    display: none;
+  }
+  /* BANNER設計 */
+  .BD {
+    float: left;
+    width: 100%;
+    margin-top: 0px;
+    height: auto;
+  }
+  .BD .subtitle {
+    width: 100%;
+    height: auto;
+  }
+  .BD .subtitle p {
+    padding-top: 0px;
+  }
+  .BD .subtitle span {
+    display: none;
+  }
+  .BDmore a {
+    padding: 10px;
+    float: none;
+    margin: 20px auto;
+    border: 2px solid #c2c2c2;
+    border-radius: 10px;
+  }
+  .BDmore a:hover {
+    border: 2px solid #ffe747;
+  }
+  .bd {
+    margin-bottom: 60px;
+  }
+  .bd_p {
+    display: inline-block;
+  }
+  .bd_p img {
+    width: 100%;
+  }
+  .bd a {
+    text-decoration: none;
+  }
+  /* UIUX設計 */
+  .UIUXBG {
+    width: 100%;
+    margin-bottom: 80px;
+  }
+  .UIUX {
+    width: 100%;
+    height: auto;
+    background-image: none;
+  }
+  .UIUX .title {
+    width: 100%;
+    height: 300px;
+    margin-left: 0px;
+  }
+  .UIUX .title p {
+    display: block;
+    font-size: 40px;
+    color: #666666;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 80px;
+  }
+  .UIUX .title span {
+    display: block;
+    font-size: 25px;
+    color: #666666;
+    font-style: italic;
+    text-align: center;
+  }
+  .UIUXmore a {
+    padding: 10px;
+    float: none;
+    margin: 20px auto;
+    border: 2px solid #666666;
+    border-radius: 10px;
+  }
+  .UIUXmore a:hover {
+    border: 2px solid #ffffff;
+  }
+  /* 平面設計 */
+  .GD {
+    float: left;
+    width: 100%;
+    margin-top: 0px;
+    height: auto;
+  }
+  .GD .subtitle {
+    width: 100%;
+    height: auto;
+  }
+  .GD .subtitle p {
+    padding-top: 0px;
+  }
+  .GD .subtitle span {
+    display: none;
+  }
+  .GDmore a {
+    padding: 10px;
+    float: none;
+    margin: 10px auto;
+    border: 2px solid #c2c2c2;
+    border-radius: 10px;
+  }
+  .GDmore a:hover {
+    border: 2px solid #ffe747;
+  }
+  .gd {
+    margin-bottom: 60px;
+    width: 284px;
+    margin: 0 auto;
+  }
+  .gd a {
+    text-decoration: none;
+  }
+  /* 多媒體設計 */
+  .md {
+    margin: 0 auto 60px auto;
+    width: 565px;
+  }
+  .md_p {
+    margin: 0 0 30px 0;
+  }
+  .md_p p {
+    text-align: center;
+  }
+  .md_p img {
+    width: 100%;
+  }
+  .md_p span {
+    display: none;
+  }
+  /* 聯絡我 */
+  #CONTACT {
+    background-image: none;
+    width: 100%;
+    height: 550px;
+  }
+  .contactarea {
+    width: 100%;
+    height: 500px;
+  }
+  .contactarea .title {
+    width: 100%;
+    margin: 20px auto 0 auto;
+  }
+  .contactarea .info {
+    margin: 0px auto;
+    float: none;
+    width: 200px;
+  }
+  .contactarea h1 {
+    width: 200px;
+    height: 200px;
+    font-size: 30px;
+    line-height: 200px;
+    border-radius: 200px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .contactarea .info ul img {
+    margin: 10px 5px -5px 5px;
+  }
+  .FOOTER {
+    margin: 10px;
+  }
+  .FOOTER p {
+    color: #666666;
+    text-align: center;
+  }
+  /* scrollTOP */
+  .scrollTOP {
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .scrollTOP img {
+    margin: 20px auto 0 auto;
+  }
+}
+/* --平板橫式版型------------------------------------- */
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
   html,
   body {
     -webkit-text-size-adjust: none; /* iPhone 旋轉後 文字不要放大 */

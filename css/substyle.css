@@ -661,9 +661,121 @@ li#protfolio ul.SUBMENU {
     margin: 20px auto 0 auto;
   }
 }
+/* --平板直式版型------------------------------------- */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Maintitle */
+  .webTitle {
+    max-width: 900px;
+    padding-left: 30px;
+  }
+  /*內容分頁統一樣式設定*/
+  .subcontent {
+    max-width: 700px;
+    margin: 100px auto;
+  }
+  .subcontent img {
+    width: 100%;
+  }
+  .subcontent ul {
+    display: block;
+    min-width: 900px;
+  }
+  /* 專案設計 */
+  .pd {
+    margin: 60px auto 60px auto;
+    width: 565px;
+  }
+  .pd_p {
+    margin: 0 auto;
+  }
+  .pd_p p {
+    text-align: center;
+  }
+  .pd_p img {
+    width: 100%;
+  }
+  .pd_p span {
+    display: none;
+  }
+  /* 網頁設計 */
+  .wd {
+    margin: 60px auto 60px auto;
+    width: 565px;
+  }
+  .wd_p {
+    margin: 0 0 30px 0;
+  }
+  .wd_p p {
+    text-align: center;
+  }
+  .wd_p img {
+    width: 100%;
+  }
+  .wd_p span {
+    display: none;
+  }
+  /* UIUX設計 */
+  .UIUXd {
+    margin: 60px auto 60px auto;
+    width: 565px;
+  }
+  .UIUXd_p {
+    text-align: center;
+  }
+  .UIUXd_p img {
+    width: 100%;
+  }
+  .UIUXd_p span {
+    display: none;
+  }
+  /* 網站地圖 */
+  #MAP {
+    background-image: none;
+    width: 100%;
+    height: 780px;
+  }
+  .maparea {
+    width: 100%;
+    height: 700px;
+  }
+  .maparea .title {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .maparea .title ul {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+  .maparea .title ul li {
+    margin: 20px;
+    float: left;
+  }
+  .maparea .title a {
+    text-decoration: none;
+  }
+  .FOOTER {
+    margin: 30px;
+  }
+  .FOOTER p {
+    color: #666666;
+    text-align: center;
+  }
+  /* scrollTOP */
+  .scrollTOP1 {
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  }
 
-/* --平板版型------------------------------------- */
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .scrollTOP1 img {
+    margin: 20px auto 0 auto;
+  }
+}
+/* --平板橫式版型------------------------------------- */
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
   html,
   body {
     -webkit-text-size-adjust: none; /* iPhone 旋轉後 文字不要放大 */
