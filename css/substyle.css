@@ -35,7 +35,7 @@ body {
   font-size: 20px;
   line-height: 85px;
   color: #6b6b6b;
-  font-weight: 1000;
+  font-weight: bold;
   text-decoration: none;
 }
 .MENU li a:hover,
@@ -94,7 +94,7 @@ li#protfolio ul.SUBMENU {
 }
 .webTitle h1 {
   font-size: 50px;
-  font-weight: 1000;
+  font-weight: bold;
   color: #ffffff;
 }
 .webTitle p {
@@ -119,7 +119,7 @@ li#protfolio ul.SUBMENU {
 }
 .back a:hover {
   color: #13a9c7;
-  font-weight: 1000;
+  font-weight: bold;
   border-bottom: 3px solid #ffe747;
   transition: 0.3s;
 }
