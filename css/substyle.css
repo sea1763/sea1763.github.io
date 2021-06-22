@@ -129,9 +129,15 @@ li#protfolio ul.SUBMENU {
   margin: 100px auto;
 }
 .subcontent h1 {
-  font-size: 32px;
+  font-size: 40px;
   color: #454545;
   margin-bottom: 50px;
+}
+.subcontent h2{
+  font-size: 28px;
+  color: #454545;
+  line-height: 50px;
+  text-align: center;
 }
 .subcontent span a {
   display: block;
@@ -158,9 +164,6 @@ li#protfolio ul.SUBMENU {
   margin: 0;
   padding: 0;
 }
-.subcontent img.shadow {
-  box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2);
-}
 
 .subcontent ul {
   display: block;
@@ -168,6 +171,20 @@ li#protfolio ul.SUBMENU {
 }
 .subcontent ul li {
   float: left;
+}
+.subcontent ol {
+  list-style: decimal;
+  padding-left: 20px;
+  width: 600px;
+  margin: 0 auto 50px auto;
+}
+.subcontent ol li{
+  line-height: 30px;
+  color: #666666;
+}
+.embed-container {
+  width: 1200px;
+  height: 675px;
 }
 
 /* 專案設計 */
@@ -529,6 +546,10 @@ li#protfolio ul.SUBMENU {
   .subcontent ul li img {
     width: 60%;
   }
+  .embed-container {
+    width: 100%;
+    height: 337.5px;
+  }
   /* 專案設計 */
   .pd {
     margin-top: 80px;
@@ -679,6 +700,10 @@ li#protfolio ul.SUBMENU {
   .subcontent ul {
     display: block;
     min-width: 900px;
+  }
+  .embed-container {
+    width: 900px;
+    height: 506px;
   }
   /* 專案設計 */
   .pd {
@@ -855,6 +880,10 @@ li#protfolio ul.SUBMENU {
   .subcontent ul {
     display: block;
     min-width: 900px;
+  }
+  .embed-container {
+    width: 900px;
+    height: 506px;
   }
   /* 專案設計 */
   .pd {
