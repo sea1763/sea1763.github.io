@@ -47,7 +47,7 @@ body {
   font-size: 20px;
   line-height: 85px;
   color: #6b6b6b;
-  font-weight: 1000;
+  font-weight: bold;
   text-decoration: none;
 }
 .MENU li a:hover,
@@ -128,7 +128,7 @@ li#protfolio ul.SUBMENU {
   font-size: 20px;
   line-height: 85px;
   color: #6b6b6b;
-  font-weight: 1000;
+  font-weight: bold;
   text-decoration: none;
 }
 .MENU li a:hover,
@@ -184,7 +184,7 @@ h2 {
   font-size: 30px;
   line-height: 45px;
   color: #6b6b6b;
-  font-weight: 1000;
+  font-weight: bold;
   user-select: none;
 }
 .brief {
@@ -304,7 +304,7 @@ h2 {
   display: inline-block;
   font-size: 40px;
   color: #13a9c7;
-  font-weight: 1000;
+  font-weight: bold;
   line-height: 50px;
   margin: 20px;
 }
@@ -328,7 +328,7 @@ h2 {
 }
 .more a:hover {
   color: #13a9c7;
-  font-weight: 1000;
+  font-weight: bold;
   border-bottom: 3px solid #ffe747;
   transition: 0.3s;
 }
@@ -421,7 +421,7 @@ h2 {
 
 .BDmore a:hover {
   color: #13a9c7;
-  font-weight: 1000;
+  font-weight: bold;
   border-bottom: 3px solid #ffe747;
   transition: 0.3s;
 }
@@ -490,7 +490,7 @@ h2 {
 }
 .UIUXmore a:hover {
   color: #13a9c7;
-  font-weight: 1000;
+  font-weight: bold;
   border-bottom: 3px solid #ffffff;
   transition: 0.3s;
 }
@@ -534,7 +534,7 @@ h2 {
 }
 .GDmore a:hover {
   color: #13a9c7;
-  font-weight: 1000;
+  font-weight: bold;
   border-bottom: 3px solid #ffe747;
   transition: 0.3s;
 }
