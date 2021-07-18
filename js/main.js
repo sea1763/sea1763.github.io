@@ -1,6 +1,10 @@
-/*MENU 變化*/ 
-$(window).scroll(function(e){
-  if ($(window).scrollTop()<=0)
+  
+$(window).scroll(function(){
+
+  var scrollTOP = $(window).scrollTop();
+
+  /*MENU 變化*/ 
+  if ( scrollTOP <=0)
   {
     $(".MENU").addClass("at_top");
     $(".LOGO").addClass("at_topLOGO");
@@ -10,24 +14,39 @@ $(window).scroll(function(e){
     $(".MENU").removeClass("at_top");
     $(".LOGO").removeClass("at_topLOGO");
   }
+
+ 
+  if ( scrollTOP > 300){
+    /*scrollTOP出現*/ 
+    $(".scrollTOP").fadeIn("fast");
+    /*scrollTOP1出現  分頁*/
+    $(".scrollTOP1").fadeIn("fast");
+  } else {
+    $(".scrollTOP").stop().fadeOut("fast");
+    
+    $(".scrollTOP1").stop().fadeOut("fast");
+  }
+
+  
+  /*根據位置判斷MENU顏色*/
+  if( scrollTOP >= $("#MAIN_BG").offset().top-0 && scrollTOP < $("#ABOUT").offset().top-200){
+    $(".MENU #UL li").removeClass("current-active");
+    $(".MENU #UL li#home").addClass("current-active")
+  }
+  else if( scrollTOP >= $("#ABOUT").offset().top-200 && scrollTOP < $("#forPortfolio").offset().top-100){
+    $(".MENU #UL li").removeClass("current-active");
+    $(".MENU #UL li#about").addClass("current-active")
+  }
+  else if( scrollTOP >= $("#forPortfolio").offset().top-100 && scrollTOP < $("body").height()-$(window).height()-200){
+    $(".MENU #UL li").removeClass("current-active");
+    $(".MENU #UL li#protfolio").addClass("current-active")
+  }
+  else if( scrollTOP >= $("body").height()-$(window).height()-200){
+    $(".MENU #UL li").removeClass("current-active");
+    $(".MENU #UL li#contact").addClass("current-active")
+  }
 });
 
-/*scrollTOP出現*/ 
-$(window).scroll(function() {
-    if ( $(this).scrollTop() > 300){
-        $(".scrollTOP").fadeIn("fast");
-    } else {
-        $(".scrollTOP").stop().fadeOut("fast");
-    }
-});
-/*scrollTOP1出現  分頁*/
-$(window).scroll(function() {
-    if ( $(this).scrollTop() > 300){
-        $(".scrollTOP1").fadeIn("fast");
-    } else {
-        $(".scrollTOP1").stop().fadeOut("fast");
-    }
-});
 
 
 
@@ -38,15 +57,15 @@ $(function(){
     return false;
       });
     $("#about").click(function () {
-        $("html,body").stop(true, false).animate({ scrollTop: 910 }, 1000, "swing");
+        $("html,body").stop(true, false).animate({ scrollTop: $("#ABOUT").offset().top - $(".MENU").height() }, 1000, "swing");
         return false;
       });
     $("#protfolioMain").click(function () {
-        $("html,body").stop(true, false).animate({ scrollTop: 1860 }, 1000, "swing");
+        $("html,body").stop(true, false).animate({ scrollTop: $("#forPortfolio").offset().top - $(".MENU").height() }, 1000, "swing");
         return false;
       });
     $("#contact").click(function () {
-        $("html,body").stop(true, false).animate({ scrollTop: 7100 }, 1000, "swing");
+        $("html,body").stop(true, false).animate({ scrollTop: $("#CONTACT").offset().top - $(".MENU").height() }, 1000, "swing");
         return false;
       });  
       
@@ -68,25 +87,6 @@ $(function(){
 })		
 
 
-/*根據位置判斷MENU顏色*/
-$(window).scroll(function(e){
-    if($(window).scrollTop()>=$("#MAIN_BG").offset().top-0 && $(window).scrollTop()<$("#ABOUT").offset().top-200){
-        $(".MENU #UL li").removeClass("current-active");
-        $(".MENU #UL li#home").addClass("current-active")
-    }
-      else if($(window).scrollTop()>=$("#ABOUT").offset().top-200 && $(window).scrollTop()<$("#forPortfolio").offset().top-100){
-        $(".MENU #UL li").removeClass("current-active");
-        $(".MENU #UL li#about").addClass("current-active")
-      }
-      else if($(window).scrollTop()>=$("#forPortfolio").offset().top-100 && $(window).scrollTop()<$("#CONTACT").offset().top-100){
-        $(".MENU #UL li").removeClass("current-active");
-        $(".MENU #UL li#protfolio").addClass("current-active")
-      }
-      else if($(window).scrollTop()>=$("#CONTACT").offset().top-2000 ){
-        $(".MENU #UL li").removeClass("current-active");
-        $(".MENU #UL li#protfolio").addClass("current-active")
-      }
-})
 
 /*照片牆*/
 window.onload = function () {
