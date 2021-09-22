@@ -1,0 +1,297 @@
+@charset "utf-8";
+
+/* ロード時にフェード */
+.an_load {
+  opacity : 1;
+  animation: si_fade 1.5s ease-in;
+}
+.an_load_fade {
+	opacity: 0;
+  animation: si_fade 1s ease-in forwards 1s;
+}
+@keyframes si_fade {
+  0% {opacity: 0;}
+	15% {opacity: 0;}
+  100% {opacity: 1;}
+}
+/* MV:ロード時にフェード表示 */
+
+.an_load_bounce01 {
+	opacity: 0;
+  animation: si_bounce 1s ease-in-out forwards 2s;
+}
+.an_load_bounce02 {
+	opacity: 0;
+  animation: si_bounce 1s ease-in-out forwards 2.6s;
+}
+.an_load_bounce03 {
+	opacity: 0;
+  animation: si_bounce 1s ease-out forwards 3.2s;
+}
+.an_load_right {
+	opacity: 0;
+  animation: si_right 0.75s ease-out forwards 1s;
+}
+@keyframes si_right {
+  0% {
+		opacity: 0;
+		transform: translate(50px, 0);
+	}
+  100% {
+		opacity: 1;
+		transform : translate(0, 0);
+	}
+}
+.an_load_left {
+	opacity: 0;
+  animation: si_left 0.75s ease-out forwards 1s;
+}
+@keyframes si_left {
+  0% {
+		opacity: 0;
+		transform: translate(-50px, 0);
+	}
+  100% {
+		opacity: 1;
+		transform : translate(0, 0);
+	}
+}
+
+/*--------------------------------------------------------
+	スクロールで表示
+--------------------------------------------------------*/
+/* アニメーションを有効にする */
+.an_true,
+.an_delay_item {
+  transition: opacity 1s, transform 0.75s;
+}
+
+
+/* フェードで現れるｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰ*/
+.si_fade,
+.si_top,
+.si_bottom,
+.si_left,
+.si_right{
+  opacity: 0;
+}
+.si_fade.scrollin,.scrollin .si_fade {opacity: 1;}
+.si_top {transform: translate(0, -50px);}
+.si_bottom {transform: translate(0, 50px);}
+.si_left {transform: translate(-50px, 0);}
+.si_right {transform: translate(50px, 0);}
+.si_top.scrollin,.scrollin .si_top,
+.si_bottom.scrollin,.scrollin .si_bottom,
+.si_left.scrollin,.scrollin .si_left,
+.si_right.scrollin,.scrollin .si_right{
+  opacity: 1;
+  transform : translate(0, 0);
+}
+
+/* 回転して現れる ｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰ*/
+.si_roll {
+  transform: scale(0) rotateZ(0deg);
+}
+.si_roll.scrollin,.scrollin .si_roll {
+  transform: scale(1) rotateZ(360deg);
+}
+/* 拡大して現れる ｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰ*/
+.si_grow {
+  opacity: 0;
+  transform: scale(0);
+}
+.si_grow.scrollin,.scrollin .si_grow {
+  opacity: 1;
+  transform: scale(1);
+}
+/* 拡大して現れる ｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰ*/
+.si_shrink {
+  opacity: 0;
+  transform: scale(1.5);
+}
+.si_shrink.scrollin,.scrollin .si_shrink {
+  opacity: 1;
+  transform: scale(1);
+}
+/* si_pop ｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰ*/
+.si_bounce{
+	opacity: 0;
+	transform: scale(0);
+}
+.si_bounce.scrollin,.scrollin .si_bounce{
+	animation: si_bounce 1s ease forwards;
+}
+@keyframes si_bounce {
+	0% {
+		opacity: 0;
+		transform: scale(0.9);
+	}
+	20% {
+		transform: scale(1.1);
+	}
+	40% {
+		transform: scale(1);
+	}
+	60% {
+		opacity: 1;
+		transform: scale(1.02);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+/*--------------------------------------------------------
+	マウスオンの動き
+--------------------------------------------------------*/
+/*.hv_focus ｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰ*/
+.hv_focus:hover{
+	filter: drop-shadow(0 6px 8px rgba(0,0,0,0.25));
+	animation: all .3s ease-in-out;
+	transform: scale(1.1);
+
+}
+/* hv_pop ｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰ*/
+.hv_pop:hover{
+	animation: hv_pop .3s ease-in-out;
+}
+@keyframes hv_pop {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.05);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+/* hv_buzzOut ｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰ*/
+.hv_buzzOut:hover{
+	animation: hv_buzzOut .75s ease-out;
+}
+@keyframes hv_buzzOut {
+	10% {transform: translateX(3px) rotate(2deg);}
+	20% {transform: translateX(-3px) rotate(-2deg);}
+	30% {transform: translateX(3px) rotate(2deg);}
+	40% {transform: translateX(-3px) rotate(-2deg);}
+	50% {transform: translateX(2px) rotate(1deg);}
+	60% {transform: translateX(-2px) rotate(-1deg);}
+	70% {transform: translateX(2px) rotate(1deg);}
+	80% {transform: translateX(-2px) rotate(-1deg);}
+	90% {transform: translateX(1px) rotate(0);}
+	100% {transform: translateX(-1px) rotate(0);}
+}
+/* hv_rippleOut ｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰ*/
+.hv_rippleOut{
+	position: relative;
+}
+.hv_rippleOut::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+.hv_rippleOut:hover::after{
+	animation: hv_rippleOut 1s ease;
+}
+
+@keyframes hv_rippleOut {
+	0%{
+		transform:scale(1);
+		box-shadow: 0 0 0 12px rgba(200,200,200,0.2);
+		opacity:1;
+	}
+	100% {
+		transform:scale(1.1);
+		box-shadow: 0 0 0 15px rgba(200,200,200,1);
+		opacity: 0;
+	}
+}
+/*--------------------------------------------------------
+	連続アニメーション
+--------------------------------------------------------*/
+
+/* rp_pop ｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰ*/
+.rp_pop{
+	animation: rp_pop 4s ease-in-out 0s infinite normal;
+}
+@keyframes rp_pop {
+	0% {
+		transform: scale(1);
+	}
+	90% {
+		transform: scale(1);
+	}
+	95% {
+		transform: scale(1.05);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+/* rp_pulse ｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰ*/
+.rp_pulse{
+	animation: rp_pulse 3s ease-in-out 0s infinite normal;
+}
+@keyframes rp_pulse {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.02);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+/* rp_r-roll ｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰ*/
+.rp_r-roll{
+	animation: rp_r-roll 8s linear 0s infinite normal;
+}
+@keyframes rp_r-roll {
+	0% {
+		transform:rotateZ(0deg);
+	}
+	50% {
+		transform:rotateZ(180deg);
+	}
+	100% {
+		transform:rotateZ(360deg);
+	}
+}
+/* rp_l-roll ｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰ*/
+.rp_l-roll{
+	animation: rp_l-roll 8s linear 0s infinite normal;
+}
+@keyframes rp_l-roll {
+	0% {
+		transform:rotateZ(0deg);
+	}
+	50% {
+		transform:rotateZ(-180deg);
+	}
+	100% {
+		transform:rotateZ(-360deg);
+	}
+}
+/* rp_l-roll ｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰ*/
+.rp_cross{
+	animation: rp_cross 2s ease-in-out 0s infinite normal;
+}
+@keyframes rp_cross {
+	0% {
+		transform:translateX(-100%);
+	}
+	100% {
+		transform:translateX(100%);
+	}
+}
+/* 時差で動くｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰ*/
+.rp_2n{animation-delay: 0.5s;}
+.rp_3n{animation-delay: 1s;}
+.rp_4n{animation-delay: 01.5s;}

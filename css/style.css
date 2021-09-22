@@ -208,14 +208,14 @@ h2 {
 #ABOUT h1 {
   display: block;
   margin: 0 auto;
-  font-size: 50px;
-  line-height: 250px;
+  font-size: 45px;
+  line-height: 230px;
   color: #6b6b6b;
   text-align: center;
   background-color: #ffe747;
-  border-radius: 250px;
-  width: 250px;
-  height: 250px;
+  border-radius: 230px;
+  width: 230px;
+  height: 230px;
   user-select: none;
 }
 .skill {
@@ -280,7 +280,7 @@ h2 {
 
 /* 作品集 */
 .p_title h1 {
-  font-size: 50px;
+  font-size: 45px;
   color: #6b6b6b;
   line-height: 120px;
   text-align: center;
@@ -747,19 +747,19 @@ h2 {
     width: 70%;
   }
   h1 {
-    font-size: 55px;
+    font-size: 50px;
     line-height: 60px;
     user-select: none;
   }
   h2 {
-    font-size: 55px;
+    font-size: 50px;
     line-height: 60px;
     -webkit-text-stroke: 1px #13a9c7;
     -webkit-text-fill-color: transparent;
   }
   .maintitle p {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 25px;
+    line-height: 35px;
   }
   .brief {
     background-image: linear-gradient(
@@ -767,22 +767,22 @@ h2 {
       rgba(255, 231, 71, 1) 50%,
       rgba(255, 231, 71, 1) 50%
     );
-    height: 100px;
+    height: 80px;
     margin-bottom: 30px;
   }
   /* 關於我 */
   #ABOUT {
-    width: 90%;
+    width: 85%;
   }
   #ABOUT h1 {
-    font-size: 40px;
-    line-height: 200px;
-    border-radius: 200px;
-    width: 200px;
-    height: 200px;
+    font-size: 35px;
+    line-height: 180px;
+    border-radius: 180px;
+    width: 180px;
+    height: 180px;
   }
   .skill {
-    margin: 50px auto 30px auto;
+    margin: 50px auto 0px auto;
   }
   .skill img {
     display: none;
@@ -792,7 +792,7 @@ h2 {
     height: auto;
     width: 100%;
     line-height: 25px;
-    font-size: 20px;
+    font-size: 16px;
     color: #6b6b6b;
     text-align: justify;
     margin-bottom: 30px;
@@ -801,6 +801,7 @@ h2 {
     background-image: none;
     height: auto;
     margin-bottom: 30px;
+    margin-left: 0;
   }
   .line .time {
     display: none;
@@ -809,32 +810,32 @@ h2 {
     margin-right: 0px;
     margin-bottom: 5px;
   }
+  .line .job1,
+  .line .job2
+  {
+    width: 55%;
+    margin: 0 auto;
+  }
   .line .job1 li {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
     color: #12a8c7;
-
-    font-size: 20px;
+    font-size: 16px;
   }
   .line .job2 li {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     padding-left: 0px;
     width: 100%;
     color: #12a8c7;
-
-    font-size: 20px;
-  }
-  .line ul .time1,
-  .line ul .time2 {
-    display: none;
+    font-size: 16px;
   }
   /* 作品集 */
   .p_title h1 {
-    font-size: 40px;
-    line-height: 100px;
-    height: 100px;
+    font-size: 35px;
+    line-height: 80px;
+    height: 80px;
   }
   .PORTFOLIO {
     width: 100%;
@@ -842,6 +843,7 @@ h2 {
   .subtitle p {
     display: block;
     text-align: center;
+    font-size: 35px;
   }
   .subtitle span {
     display: none;
@@ -852,6 +854,9 @@ h2 {
     margin: 0 auto;
     border: 2px solid #c2c2c2;
     border-radius: 10px;
+    font-size: 20px;
+    width: 80px;
+    height: 25px;
   }
   .more a:hover {
     border: 2px solid #ffe747;
@@ -859,6 +864,8 @@ h2 {
   /* 專案設計 */
   .pd {
     margin-bottom: 60px;
+    margin: 0 auto;
+    width: 90%;
   }
   .pd_p {
     margin: 0 0 30px 0;
@@ -874,7 +881,9 @@ h2 {
   }
   /* 網頁設計 */
   .wd {
+    margin: 0 auto;
     margin-bottom: 60px;
+    width: 90%;
   }
   .wd_p {
     margin: 0 0 30px 0;
@@ -911,12 +920,17 @@ h2 {
     margin: 20px auto;
     border: 2px solid #c2c2c2;
     border-radius: 10px;
+    font-size: 20px;
+    width: 80px;
+    height: 25px;
   }
   .BDmore a:hover {
     border: 2px solid #ffe747;
   }
   .bd {
     margin-bottom: 60px;
+    margin: 0 auto;
+    width: 90%;
   }
   .bd_p {
     display: inline-block;
@@ -930,7 +944,7 @@ h2 {
   /* UIUX設計 */
   .UIUXBG {
     width: 100%;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
   }
   .UIUX {
     width: 100%;
@@ -939,23 +953,19 @@ h2 {
   }
   .UIUX .title {
     width: 100%;
-    height: 300px;
+    height: 260px;
     margin-left: 0px;
   }
   .UIUX .title p {
     display: block;
-    font-size: 40px;
+    font-size: 35px;
     color: #666666;
     font-weight: 900;
     text-align: center;
     padding-top: 80px;
   }
   .UIUX .title span {
-    display: block;
-    font-size: 25px;
-    color: #666666;
-    font-style: italic;
-    text-align: center;
+    display: none;
   }
   .UIUXmore a {
     padding: 10px;
@@ -963,6 +973,9 @@ h2 {
     margin: 20px auto;
     border: 2px solid #666666;
     border-radius: 10px;
+    font-size: 20px;
+    width: 80px;
+    height: 25px;
   }
   .UIUXmore a:hover {
     border: 2px solid #ffffff;
@@ -990,6 +1003,9 @@ h2 {
     margin: 10px auto;
     border: 2px solid #c2c2c2;
     border-radius: 10px;
+    font-size: 20px;
+    width: 80px;
+    height: 25px;
   }
   .GDmore a:hover {
     border: 2px solid #ffe747;
@@ -1004,6 +1020,8 @@ h2 {
   }
   /* 多媒體設計 */
   .md {
+    margin: 0 auto;
+    width: 90%;
     margin-bottom: 60px;
   }
   .md_p {
@@ -1214,9 +1232,16 @@ h2 {
     background-image: none;
     height: auto;
     margin-bottom: 30px;
+    margin-left: 0;
   }
   .line .time {
     display: none;
+  }
+  .line .job1,
+  .line .job2
+  {
+    width: 35%;
+    margin: 0 auto;
   }
   .line ul li {
     margin-right: 0px;
@@ -1224,19 +1249,17 @@ h2 {
   }
   .line .job1 li {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
     color: #12a8c7;
-
     font-size: 20px;
   }
   .line .job2 li {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     padding-left: 0px;
     width: 100%;
     color: #12a8c7;
-
     font-size: 20px;
   }
   .line ul .time1,
@@ -1331,7 +1354,9 @@ h2 {
     border: 2px solid #ffe747;
   }
   .bd {
+    margin: 0 auto;
     margin-bottom: 60px;
+    width: 70%;
   }
   .bd_p {
     display: inline-block;

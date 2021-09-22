@@ -519,10 +519,14 @@ li#protfolio ul.SUBMENU {
   /* Maintitle */
   #webMaintitle {
     margin: 0 auto;
+    height: 170px;
   }
   .webTitle {
     max-width: 900px;
     padding-left: 30px;
+  }
+  .webTitle h1{
+    font-size: 40px;
   }
   /*back BTN*/
   .back a {
@@ -531,11 +535,17 @@ li#protfolio ul.SUBMENU {
     margin: 0 auto;
     border: 2px solid #c2c2c2;
     border-radius: 10px;
+    font-size: 20px;
+    width: 80px;
+    height: 25px;
   }
   /*內容分頁統一樣式設定*/
   .subcontent {
     max-width: 900px;
     margin: 100px auto;
+  }
+  .subcontent h1{
+    font-size: 30px;
   }
   .subcontent img {
     width: 100%;
