@@ -73,7 +73,7 @@ li#protfolio ul.SUBMENU {
 }
 #protfolio .SUBMENU li a:hover {
   font-size: 18px;
-  background-color: #ffe747;
+  background-color: #ececec;
   transition: 0.3s;
 }
 #TOP-MENU {
@@ -346,7 +346,7 @@ li#protfolio ul.SUBMENU {
   bottom: 0;
 }
 .maparea {
-  background-color: #ffe747;
+  background-color: #bedee4;
   max-width: 1200px;
   height: 340px;
   margin: 0 auto;
@@ -429,7 +429,7 @@ li#protfolio ul.SUBMENU {
   position: fixed;
   width: 100px;
   height: 100px;
-  background-color: #ffe747;
+  background-color: #bedee4;
   border-radius: 100px;
   bottom: 60px;
   right: 50px;
